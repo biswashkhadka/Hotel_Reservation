@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvchecking"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:background="#A9A9A9"
+        android:gravity="center"
+        android:hint="Checking Date"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvcheckout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:background="#A9A9A9"
+        android:gravity="center"
+        android:hint="Checkout Date"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:hint="Select Room Type"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/sproomtype"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Adult"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Children"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etadult"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:id="@+id/etchild"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"
+
+            />
+        <EditText
+            android:id="@+id/etroom"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="#808080"
+        android:id="@+id/btncalculate"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/totalcost"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:id="@+id/tvvat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvgrandtotal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        />
+
+
+</LinearLayout>
