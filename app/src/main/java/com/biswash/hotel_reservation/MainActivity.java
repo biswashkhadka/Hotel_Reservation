@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         tvgrandtotal=findViewById(R.id.tvgrandtotal);
 
 
-        String roomtype[]={"Deluxe","Presidential", "Premium"};
+        String roomtype[]={"-- Select Room Type --", "Deluxe","Presidential", "Premium"};
         ArrayAdapter adapter1=new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,roomtype
